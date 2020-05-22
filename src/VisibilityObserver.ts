@@ -195,9 +195,8 @@ let getAncestorElements = (element: Element): Element[] => {
 
 /**
  * Gets the `VisibleRect` of an `element`.
- * @private
  */
-let getVisibleRect = (element: Element): VisibleRect => {
+export function getVisibleRect(element: Element): VisibleRect {
 	let ancestorElements = getAncestorElements(element)
 	let visibleRect = element.getBoundingClientRect()
 
