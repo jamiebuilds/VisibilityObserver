@@ -1,0 +1,65 @@
+{
+  "name": "visibilityobserver",
+  "version": "0.0.0",
+  "description": "Experimental API for observing the visible box of an element.",
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "repository": "jamiebuilds/VisibilityObserver",
+  "source": "src/VisibilityObserver.ts",
+  "main": "dist/VisibilityObserver.js",
+  "module": "dist/VisibilityObserver.module.js",
+  "unpkg": "dist/VisibilityObserver.umd.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "visible",
+    "visibility",
+    "dom",
+    "rect",
+    "coodinates",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    "x",
+    "y",
+    "hidden",
+    "scroll",
+    "observer",
+    "observable",
+    "intersectionobserver",
+    "intersection",
+    "scroll",
+    "resize",
+    "resizeobserver"
+  ],
+  "scripts": {
+    "format": "prettier --write '**'",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf dist && microbundle --inline none --name VisibilityObserver",
+    "build:example": "rm -rf example-dist && parcel build example/index.html -d example-dist --public-url ./",
+    "start": "rm -rf example-dist && parcel example/index.html -d example-dist",
+    "prepublishOnly": "npm run -s build"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "microbundle": "^0.12.0",
+    "parcel": "^1.12.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

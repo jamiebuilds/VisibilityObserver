@@ -1,0 +1,6 @@
+<svg width="410" height="410" xmlns="http://www.w3.org/2000/svg">
+	<rect height="300" width="300" fill="#0ff" x="5" y="5"/>
+	<rect height="300" width="300" x="105" y="105" fill="#f0f" opacity="0.25" stroke="black" stroke-width="10" stroke-alignment="inside"/>
+	<rect height="200" width="200" x="105" y="105" fill="#f0f" stroke="black" stroke-width="10" stroke-alignment="inside"/>
+	<rect height="300" width="300" x="5" y="5" fill="transparent" stroke="black" stroke-width="10" stroke-alignment="inside"/>
+</svg>

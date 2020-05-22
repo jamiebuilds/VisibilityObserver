@@ -1,0 +1,29 @@
+# Prettier is setup to run on everything by default to ensure maximum prettiness
+# However, prettier doesn't support every file type, and some files dont need to
+# be pretty. So they are "ignored" using glob patterns in this file in a similar
+# fashion to .gitignore
+
+# third party deps dont need formatting
+node_modules
+package-lock.json
+
+# nor do built things
+dist
+.rpt2_cache
+.cache
+example-dist
+
+# config files are sometimes nice to format yourself
+.prettierrc.yml
+tsconfig.json
+
+# these things are just not supported by prettier
+.*ignore
+.*config
+.*rc
+*.png
+*.svg
+*.jpeg
+*.jpg
+*.ico
+LICENSE

@@ -1,0 +1,28 @@
+# Prettier Options:
+# https://prettier.io/docs/en/options.html
+
+# printWidth: 80                     # (default: 80)
+# tabWidth: 2                        # (default: 2)
+useTabs: true                        # (default: false) -- tabs allow people to choose their tab width in the editor
+semi: false                          # (default: true) -- semicolons are not really necessary when using prettier
+# singleQuote: false                 # (default: false)
+# quoteProps: "as-needed"            # (default: "as-needed")
+# jsxSingleQuote: false              # (default: false)
+trailingComma: "all"                 # (default: "es5") -- code is being compiled with babel, no point in not enabling this everywhere
+# bracketSpacing: true               # (default: true)
+# jsxBracketSameLine: false          # (default: false)
+# arrowParens: "always"              # (default: "always")
+# requirePragma: false               # (default: false)
+# insertPragma: false                # (default: false)
+proseWrap: "always"                  # (default: "preserve") -- reading markdown shouldn't be annoying when not rendered
+# htmlWhitespaceSensitivity: "css"   # (default: "css")
+# vueIndentScriptAndStyle: false     # (default: false)
+# endOfLine: "lf"                    # (default: "lf")
+
+overrides:
+  - files:
+      - "*.{yaml,yml}" # -- yaml is dumb about whitespace
+      - "*.json" # -- don't fight most JSON tools about tabs
+      - "*.md" # -- Markdown is better presented with spaces
+    options:
+      useTabs: false
