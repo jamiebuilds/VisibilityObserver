@@ -6,6 +6,8 @@
 
 > Experimental API for observing the visible box of an element
 
+## [See Demo](https://jamiebuilds.github.io/VisibilityObserver/)
+
 ---
 
 > Note: This implementation currently has some serious performance problems when
