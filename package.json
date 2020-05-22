@@ -1,6 +1,6 @@
 {
   "name": "visibilityobserver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Experimental API for observing the visible box of an element.",
   "author": "Jamie Kyle <me@thejameskyle.com>",
   "license": "MIT",
